@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="no-loader">
+    {% include header.html %}
+    <div class="main-container">
+        <section class="section-header overlay preserve3d">
+            <div class="background-image-holder parallax-background">
+                <img class="background-image" alt="Background Image" src="img/header-fossasia.jpg">
+            </div>
+            <div class="container vertical-align">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-">
+                        <h1 class="text-white">{{ site.title | default: site.github.repository_name }}</h1>
+                        <p class="lead text-white">
+                            {{ site.description | default: site.github.project_tagline }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md-content-raw">
+            <div class="container">
+                {{ content }}
+            </div>
+        </section>
+    </div>
+    {% include footer.html %}
+</body>
+</html>
