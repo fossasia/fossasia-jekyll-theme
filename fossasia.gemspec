@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "fossasia"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Nitesh Kumar Niranjan"]
   spec.email         = ["niteshkumarniranjan@gmail.com"]
 
